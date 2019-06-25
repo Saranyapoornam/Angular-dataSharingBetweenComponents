@@ -1,0 +1,7 @@
+<p>parent page</p>
+<h3>From children:{{message}}</h3>
+<h3>From view children:{{viewChildmessage}}</h3>
+<h3>From service/behaviour subject:{{newmessage}}</h3>
+
+<app-child [childMessage]="parentMessage" (messageEvent)="receiveMessage($event)"></app-child>
+<app-sibling></app-sibling>
